@@ -69,15 +69,15 @@ console.log(boundary(36));
 */
 
 const epify = function (str) {
-  if ((str = "EPICODE")) {
+  if (str.slice(0, 7) === "EPICODE") {
     return str;
   } else {
-    return "EPICODE" + text;
+    return "EPICODE" + str;
   }
 };
 
-console.log("!= EPICODE...", epify("ehi come stai"));
-console.log("=== EPICODE...", epify("EPICODE"));
+console.log("!= EPICODE...", epify(" ehi come stai"));
+console.log("=== EPICODE...", epify("EPICODE è la migliore"));
 
 // console.log(epify("epicode è fantastico"));
 
