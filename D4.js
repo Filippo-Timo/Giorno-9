@@ -103,9 +103,9 @@ check3and7(35);
 */
 
 const reverseString = function (str) {
+  str.split(", ");
   let stringa = [];
   stringa.push(str);
-  stringa.split(", ");
   stringa.reverse();
   return stringa;
 };
