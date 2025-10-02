@@ -103,11 +103,10 @@ check3and7(35);
 */
 
 const reverseString = function (str) {
-  str.split(", ");
-  let stringa = [];
-  stringa.push(str);
-  stringa.reverse();
-  return stringa;
+  let arr = str.split("");
+  arr.reverse();
+  let newstr = arr.join("");
+  return newstr;
 };
 
 console.log(reverseString("EPICODE"));
