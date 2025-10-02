@@ -53,7 +53,7 @@ console.log("crazyDiff di un numero MAGGIORE di 19 = ", crazyDiff1(39));
 */
 
 const boundary = function (n) {
-  if (20 <= n && n <= 100) {
+  if ((20 <= n && n <= 100) || n === 400) {
     return "true";
   } else {
     return "false";
@@ -103,7 +103,7 @@ check3and7(35);
 */
 
 const reverseString = function (str) {
-  str.split(", ");
+  stringa.split(", ");
   let stringa = [];
   stringa.push(str);
   stringa.reverse();
